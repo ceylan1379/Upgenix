@@ -1,4 +1,4 @@
-@logOutFunc
+@smoke @logOutFunc
 Feature: Log out functionality
 
   User Story :

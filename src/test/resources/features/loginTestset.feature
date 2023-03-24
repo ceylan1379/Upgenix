@@ -1,5 +1,5 @@
 @logTestset
-Feature: Default
+Feature: Login functionality
 
 	#As user,i should be able login on to the home page
 	@UPG10-302 @UPG10-404
