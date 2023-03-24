@@ -7,17 +7,20 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
+                //"pretty",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json"
+
         },
-        features = "src/test/resources/features",
+
+        features ="src/test/resources/features",
         glue ="com/cydeo/step_definitions",
         dryRun=false,
-        tags = "@logOutFunc",
+        tags = "@logTestset",
         publish=true
-
 )
 
-public class Runner1 {
+public class Runner {
 }

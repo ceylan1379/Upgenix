@@ -1,3 +1,4 @@
+@UPG10-317
 Feature: Default
 
 	#AC5- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.

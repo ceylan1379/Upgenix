@@ -1,3 +1,4 @@
+@UPG10-397
 Feature: Default
 
 	#AC2- The user can not go to the home page again by clicking the step back button after successfully logged out.
