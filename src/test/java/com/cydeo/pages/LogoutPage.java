@@ -26,6 +26,6 @@ public class LogoutPage {
     public WebElement clickLogOutButton;
 
     @FindBy(xpath = "//div[@class='o_dialog_warning modal-body']")
-    public WebElement message;
+    public WebElement messageOfBackStep;
 
 }

@@ -31,6 +31,5 @@ Feature: Log out functionality
   Scenario: Verifying user can not go to the home page again by clicking the step back button
     Given user is logged in with username "salesmanager41@info.com" password "salesmanager"
     When user clicks Log out button
-    And user is on the login page
     And user clicks the step back button
     Then user should see the message "Your Odoo session expired. Please refresh the current web page."

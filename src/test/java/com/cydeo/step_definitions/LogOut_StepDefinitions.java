@@ -45,20 +45,21 @@ public class LogOut_StepDefinitions {
         actions.keyDown(Keys.CONTROL).sendKeys("w").keyUp(Keys.CONTROL);
 
     }
-    @When("user open web page again")
+   /* @When("user open web page again")
     public void user_open_web_page_again() {
         driver.get(ConfigurationReader.getProperty("url"));
 
-    }
+    }*/
     @When("user clicks the step back button")
     public void user_clicks_the_step_back_button() {
-        driver.navigate().back();
+       Driver.getDriver().navigate().back();
 
     }
 
     @Then("user should see the message {string}")
     public void user_should_see_the_message(String expectedMassage) {
-        String actualMessage = logoutPage.message.getText();
+        BrowserUtils.sleep(2);
+        String actualMessage = logoutPage.messageOfBackStep.getText();
         Assert.assertEquals(expectedMassage,actualMessage);
 
     }
