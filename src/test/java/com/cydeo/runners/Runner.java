@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         glue ="com/cydeo/step_definitions",
         dryRun=false,
         tags = "@smoke",
-        publish=true
+        publish=false
 )
 
 public class Runner {
