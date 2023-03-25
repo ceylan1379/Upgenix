@@ -22,10 +22,13 @@ public class Driver {
                    WebDriverManager.chromedriver().setup();
                    driverpool.set(new ChromeDriver());
                    driverpool.get().manage().window().maximize();
+                   driverpool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
                    break;
                case "firefox":
                    WebDriverManager.firefoxdriver().setup();
                    driverpool.set(new FirefoxDriver());
+                   driverpool.get().manage().window().maximize();
                    driverpool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                    break;
            }
