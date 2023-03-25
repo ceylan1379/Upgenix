@@ -1,4 +1,4 @@
-@loginFunc
+@smoke @loginFunc
 Feature: Login functionality
 
   User Story :
