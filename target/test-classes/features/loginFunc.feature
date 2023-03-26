@@ -17,7 +17,7 @@ Feature: Login functionality
   AC5- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
 
 
-  @smoke @UPG10-302
+ @UPG10-302
   Scenario Outline: Verifying login functionality with valid credentials
     Given  user is on the login page
     When user enters valid username "<username>"

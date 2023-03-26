@@ -24,9 +24,9 @@ public class Driver {
            switch (browserType){
                case "remote-chrome":
                    // assign your grid server address
-                   String gridAdress = "34.200.227.154"; // put your own Linux grid IP here
+                   String gridAddress = "3.237.236.184"; // put your own Linux grid IP here
                    try {
-                       URL url = new URL("http://" + gridAdress + ":4444/wd/hub");
+                       URL url = new URL("http://" + gridAddress + ":4444/wd/hub");
                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                        desiredCapabilities.setBrowserName("chrome");
                        driverpool.set(new RemoteWebDriver(url, desiredCapabilities));
